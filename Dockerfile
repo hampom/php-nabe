@@ -4,6 +4,7 @@ MAINTAINER anazawa yasuhiro <yasuhiro@humming-code.com>
 RUN apt-get update && \
     apt-get install -y ca-certificates git vim build-essential autoconf bison \
                        libtool flex re2c texinfo curl libxml2-dev libicu-dev \
+                       libssl-dev libcurl4-openssl-dev\
                     --no-install-recommends && \
     rm -r /var/lib/apt/lists/*
 
